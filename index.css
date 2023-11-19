@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap');
+
+body,
+html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#stopwatch {
+    position: absolute;
+    top: 0;
+}
+
+#asteroids{
+    margin: 20px;
+    border: 20px solid red;
+}
+
+section {
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    height: 30vh;
+    width: 40vw;
+    padding: 0;
+    margin: 0;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    font-size: 2.4em;
+    border: 5px solid red;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 15px 15px #6f1a1a;
+}
+
+#welcome{
+    display: grid;
+}
+
+#gameover{
+    display: none;
+}
+
+.headline {
+    width: 100%;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: 4px solid red;
+    margin: 20px;
+    width: 50%;
+    align-self: center;
+    font-family: 'Press Start 2P';
+    background-color: black;
+    color: white;
+    padding: 5px;
+    box-shadow: 0 0 5px 5px #6f1a1a;
+    transition: all ease-in-out 0.2s;
+
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 10px #6f1a1a;
+    transition: all ease-in-out 0.2s;
+}
+
+#bestscore, #currentscore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    margin: 5px;
+}
